@@ -5,6 +5,7 @@ import BookListItem from './BookListItem';
 
 class BookList extends Component {
     render() {
+
         const bookitems = this.props.books.map( book => {
             return(
                 <BookListItem  
@@ -17,7 +18,7 @@ class BookList extends Component {
 
         return(
             <List>
-                { bookitems }
+                { Array.isArray(bookitems) && bookitems.length !== 0 ? bookitems : 'Empty List' }
             </List>
         )
     }

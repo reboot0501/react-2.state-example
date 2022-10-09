@@ -37,7 +37,6 @@ class BookDetail extends Component {
         )
     }
 
-
 }
 
 export default withStyles(styles)(BookDetail);

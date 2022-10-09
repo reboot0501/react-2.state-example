@@ -24,7 +24,7 @@ class BookListItem extends Component {
         return(
             <ListItem onClick={ () => onSelectedBook(book) }> 
                 <Paper>
-                    <Grid container spacing={2}>
+                    <Grid container spacing={2}>          
                         <Grid item>
                             <img className={classes.Image} src={book.imgUrl} />
                         </Grid>
